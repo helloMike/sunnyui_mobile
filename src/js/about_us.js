@@ -7,24 +7,28 @@ require.config({
         "jquery":"base/jquery.min",
         "jquery.easing":"base/jquery.easing.1.3",
         "about_us_module":"modules/about_us_module",
+        "common_module":"modules/common_module",
         "hammerjs":"base/hammer",
         "jhammer":"base/jquery.hammer"
+
     },
     shim:{
         "jquery.easing":{
             deps:["jquery"]
         },
-      "about_us_module":{
-          exports:"about_us",
+      "common_module":{
+          exports:"common",
           deps:["jquery","jquery.easing","hammerjs","jhammer"]
       }
+
+
     }
 });
 //require function
-require(["about_us_module"],function(about_us){
+require(["common_module"],function(common){
     //list_button的点击 按压事件
-    about_us.show_nav();
+    common.show_nav();
     //nav内容的点击 按压事件
-    about_us.nav_tab();
+    common.nav_tab();
 
 });
