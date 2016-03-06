@@ -21,6 +21,7 @@ define(["baidu_map"],function(){
     }
 })
 */
+
 define(["baidu_map"],function(baidu_map){
     var map = initMap;
         return {
@@ -28,3 +29,4 @@ define(["baidu_map"],function(baidu_map){
         }
     }
 )
+

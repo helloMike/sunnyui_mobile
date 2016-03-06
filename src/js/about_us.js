@@ -30,5 +30,7 @@ require(["common_module"],function(common){
     common.show_nav();
     //nav内容的点击 按压事件
     common.nav_tab();
+    //设定html的字体大小来调节rem单位
+    common.set_html_fs();
 
 });

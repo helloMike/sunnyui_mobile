@@ -2,6 +2,7 @@
  * Created by Administrator on 2016/2/29.
  */
 //require config
+
 require.config({
     paths:{
         //公共模块
@@ -40,6 +41,8 @@ require(["common_module","coorperate_module"],function(common,coorperate){
     common.show_nav();
     //nav内容的点击 按压事件
     common.nav_tab();
+    //设定html的字体大小来调节rem单位
+    common.set_html_fs();
     //百度地图
     coorperate.map();
 
